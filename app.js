@@ -48,6 +48,24 @@ function namesList(json){
         st.innerHTML = json[i].capital
         st.style.gridArea = "stolica"
         addDiv.appendChild(st)
+        
+        
+        const ch1 = document.getElementById("ch1")
+        const ch2 = document.getElementById("ch2")
+        const ch3 = document.getElementById("ch3")
+        const ch4 = document.getElementById("ch4")
+        const ch5 = document.getElementById("ch5")
+        const ch6 = document.getElementById("ch6")
+        const region = json[i].region
+        ch1.addEventListener('change',(region)=>{
+            if(region == "Europ"){
+                addDiv == region
+                
+            }else{
+                hidden = addDiv
+            }
+
+        })
 
 
 
