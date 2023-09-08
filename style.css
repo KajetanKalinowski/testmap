@@ -1,0 +1,37 @@
+body{
+
+    margin: 0px;
+    display: grid;
+    grid-template-areas: "menu lista";
+    grid-template-columns: 25% 75%;
+    
+
+}
+#d1{
+    grid-area: menu;
+    background-color: rgb(77, 77, 77);
+    color: rgb(253, 253, 253);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#d2{
+    grid-area: lista;
+    background-color: rgb(179, 179, 179);
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    
+
+}
+
+#newDiv{
+    height: 100px;
+    width: 300px;
+    border: 5px solid black;
+    margin: 2px;
+}
