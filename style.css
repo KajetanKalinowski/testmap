@@ -1,37 +1,32 @@
 body{
-
-    margin: 0px;
     display: grid;
-    grid-template-areas: "menu lista";
-    grid-template-columns: 25% 75%;
-    
-
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "a1 a2";
 }
-#d1{
-    grid-area: menu;
-    background-color: rgb(77, 77, 77);
-    color: rgb(253, 253, 253);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-
+#menu{
+    grid-area: a1;
+    border-right: 1px black dotted;
+    overflow: visible;
+    text-align: center;
+    background-color: rgb(75, 75, 75);
 }
-#d2{
-    grid-area: lista;
-    background-color: rgb(179, 179, 179);
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        
-    
-
+#main{
+    grid-area: a2;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-left: black 2px solid;
+    padding-left: 10px;
+    background-color: rgb(151, 151, 151);
 }
-
-#newDiv{
-    height: 100px;
-    width: 300px;
-    border: 5px solid black;
-    margin: 2px;
+.divs{
+    border: black 3px solid;
+}
+h2{
+    margin: 0;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
 }
